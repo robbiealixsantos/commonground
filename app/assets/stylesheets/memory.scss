@@ -1,0 +1,46 @@
+#president-container {
+  width: 1080px;
+  margin: auto;
+  position: relative;
+  display: block;
+  margin: auto;
+}
+
+.card {
+  float: left;
+  margin: 10px;
+  height: 190px;
+  width: 200px;
+  background: url('/images/memory-game/panda-card.png');
+  background-size: 100%;
+  text-align: center;
+  border-radius: 5px;
+  border: 10px solid black;
+  box-shadow: 10px 10px 10px #ccc;
+}
+
+.president-game {
+  background: url('/images/memory-game/background-img.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+  }
+
+#president-heading {
+  font-family: 'Baloo Bhaina', cursive;
+  font-size: 5em;
+  text-align: center;
+  margin-bottom: -3vh;
+  margin-left: -10vh;
+}
+
+#president-victory {
+  font-family: 'Baloo Bhaina', cursive;
+  font-size: 10em;
+  position: relative;
+  display: block;
+  margin: auto;
+  margin-top: 200px;
+  margin-left: 105px;
+}
