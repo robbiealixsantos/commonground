@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root "welcome#about"
+  root "welcome#index"
 
   get '/signup', to: "registrations#new"
   post '/signup', to: "registrations#create"
@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
   get 'users/:id', to: "users#show", as: "profile"
 
-
+  resources :welcome, only: :index
   # Serve websocket cable requests in-process
   mount ActionCable.server => '/cable'
 end
