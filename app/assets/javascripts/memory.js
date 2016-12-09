@@ -1,6 +1,7 @@
 var presidentMemory = function(){
   var memoryGame = {
-    cards: [],
+    cards: ['images/memory-game/p-1.png','images/memory-game/p-1.png','images/memory-game/p-2.png','images/memory-game/p-2.png','images/memory-game/p-3.png','images/memory-game/p-3.png',
+            'images/memory-game/p-4.png', 'images/memory-game/p-4.png','images/memory-game/p-5.png','images/memory-game/p-5.png','images/memory-game/p-6.png','images/memory-game/p-6.png'],
     init: function() {
       memoryGame.shuffle();
     },

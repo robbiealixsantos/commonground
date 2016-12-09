@@ -11,7 +11,7 @@
   margin: 10px;
   height: 190px;
   width: 200px;
-  background: url('/images/memory-game/panda-card.png');
+  background: url('/images/president-memory/president-card.jpeg');
   background-size: 100%;
   text-align: center;
   border-radius: 5px;
@@ -20,7 +20,7 @@
 }
 
 .president-game {
-  background: url('/images/memory-game/background-img.jpg') no-repeat center center fixed;
+  background: url('/images/president-memory/background-img.png') no-repeat center center fixed;
   -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -28,7 +28,7 @@
   }
 
 #president-heading {
-  font-family: 'Baloo Bhaina', cursive;
+  font-family: 'Droid Serif', serif;
   font-size: 5em;
   text-align: center;
   margin-bottom: -3vh;
@@ -36,7 +36,7 @@
 }
 
 #president-victory {
-  font-family: 'Baloo Bhaina', cursive;
+  font-family: 'Droid Serif', serif;
   font-size: 10em;
   position: relative;
   display: block;
