@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 
   get 'users/:id', to: "users#show", as: "profile"
 
+  resources :topics
 
   # Serve websocket cable requests in-process
   mount ActionCable.server => '/cable'
