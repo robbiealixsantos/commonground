@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root "welcome#about"
+  devise_for :users
+  root "welcome#index"
 
   get '/signup', to: "registrations#new"
   post '/signup', to: "registrations#create"
