@@ -1,6 +1,8 @@
 class User < ApplicationRecord
-  has_many :rooms
-    enum :affiliation [:red, :blue]
+  # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :trackable, :validatable
 
   has_many :messages
   has_many :chatrooms, through: :messages
@@ -9,5 +11,5 @@ class User < ApplicationRecord
   validates_presence_of :password
   validates_presence_of :email
   validates_uniqueness_of :email
-
 end
+
