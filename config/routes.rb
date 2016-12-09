@@ -11,6 +11,8 @@ Rails.application.routes.draw do
 
   get 'users/:id', to: "users#show", as: "profile"
 
+  get '/memory' => 'memory#index'
+
   resources :topics
 
   # Serve websocket cable requests in-process
